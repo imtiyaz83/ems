@@ -9,7 +9,7 @@
 
         <div class="login__forms">
 
-            <form action="{{ route('speakers.store') }}" class="login__create" id="" method="POST">
+            <form action="{{ route('register.store') }}" class="login__create" id="" method="POST">
                 @csrf
                 <h1 class="login__title">Create Account</h1>
 

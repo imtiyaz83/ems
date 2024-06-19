@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Hash;
 class SpeakerController extends Controller
 {
 
-    public function register()
+    public function getRegister()
     {
         return view('register');
     }
@@ -37,7 +37,6 @@ class SpeakerController extends Controller
                 'password' => $hashedPassword,
                 'bio' => $request->input('bio'),
             ]);
-
             // Flash success message to the session
             $request->session()->flash('success', 'You have been registered successfully!');
 

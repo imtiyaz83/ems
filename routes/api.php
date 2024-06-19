@@ -1,4 +1,5 @@
 <?php
 use App\Http\Controllers\TalkProposalController;
 
-Route::get('/talk-proposals', [TalkProposalController::class, 'index']);
+Route::get('/proposals/{speaker_id}', [TalkProposalController::class, 'listProposals'])->name('proposals.list');
+

@@ -72,4 +72,15 @@ class TalkProposalController extends Controller
         $proposals = TalkProposal::where("speaker_id", Auth::id())->orderBy('preferred_time_slot')->get();
         return view('proposal-list', compact('proposals'));
     }
+
+    public function listProposals($speaker_id)
+    {
+        // Fetch proposals for the specified speaker_id
+        $proposals = TalkProposal::where('speaker_id', $speaker_id)
+                                 ->orderBy('preferred_time_slot')
+                                 ->get();
+
+        // Return a JSON response with the proposals
+        return response()->json(['proposals' => $proposals], 200);
+    }
 }

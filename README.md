@@ -47,3 +47,6 @@ For Talk Proposal Tests
 ```bash
 php artisan test tests/Feature/TalkProposalTest.php
 ```
+API to get a list of proposals submitted by speaker
+
+http://localhost:8000/proposals/{id}
