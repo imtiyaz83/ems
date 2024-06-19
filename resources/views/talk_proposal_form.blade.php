@@ -7,7 +7,7 @@
 
                     <form action="{{ route('talkProposals.store') }}" class="login__create" id="" method="POST">
                      @csrf
-                        <h1 class="login__title">Create Account</h1>
+                        <h1 class="login__title">Submit a Proposal</h1>
     
                         <div class="login__box">
                             <i class='bx bx-user login__icon'></i>
