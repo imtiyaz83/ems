@@ -31,5 +31,11 @@ Route::get('/register', [SpeakerController::class, 'register'])->name('register.
 Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login.show');
 
-Route::post('/speakers', [SpeakerController::class, 'store'])->name('speakers.store');
+Route::post('/speakers', [SpeakerController::class, 'store'])->name('speakerTest');
 Route::post('/talk-proposals', [TalkProposalController::class, 'store'])->name('talkProposals.store');
+Route::post('/talkproposals', [TalkProposalController::class, 'testtalkTest'])->name('talkProposals.talkTest');
+Route::post('/speaker-test', [SpeakerController::class, 'speakerTest'])->name('speakerTest');
+Route::post('/talk-proposal', [TalkProposalController::class, 'talkTest'])->name('talkTest');
+
+
+
